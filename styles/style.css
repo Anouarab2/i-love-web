@@ -1,0 +1,17 @@
+article{
+background-color: lightgrey;
+}
+
+article.oneven{
+    background-color: grey;
+}
+
+
+@font-face {
+    font-family: 'PixelFont-Regular.otf';
+    src: url('../assets/PixelFont-Regular.otf') format(openType);    
+}
+
+body{
+    font-family: 'PixelFont-Regular.otf';
+}
