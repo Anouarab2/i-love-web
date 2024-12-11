@@ -1,17 +1,111 @@
+*{
+    margin: 0;
+}
+
+.ham-items{
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    list-style: none;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    right: -500px;
+    transition: .3s ease;
+}
+
+.ham-items.active{
+    right: 0;
+}
+
+nav{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2em;
+    align-items: center;
+}
+
+img{
+    width: 2.4em;
+    height: 2.7em;
+    background-color: rgb(44, 42, 78);
+    padding-block: 1em;
+    padding-inline: 1.3em;
+}
+
+nav button{
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.ham-menu{
+    width: 3em;
+    height: 3em;
+    margin-left: auto;
+    position: relative;
+}
+
+.ham-menu span{
+    height: .3em;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1){
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3){
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2){
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+video{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+
+main{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+
+}
+
 article{
-background-color: lightgrey;
+    width: 80vw;
+    background-color: lightgrey;
+    padding: 2em;
+    border-radius: 1em;
+
 }
 
-article.oneven{
+article:nth-child(odd){
     background-color: grey;
-}
-
-
-@font-face {
-    font-family: 'PixelFont-Regular.otf';
-    src: url('../assets/PixelFont-Regular.otf') format(openType);    
-}
-
-body{
-    font-family: 'PixelFont-Regular.otf';
 }
