@@ -1,6 +1,13 @@
-*{
+body{
     margin: 0;
     font-family: 'ubuntu', sans-serif;
+    /* background: url(../assets/rain4k.mp4); */
+
+}
+ 
+header{
+    position: sticky;
+    top: 0;
 }
 
 .ham-items{
@@ -9,10 +16,22 @@
     list-style: none;
     height: 100vh;
     width: 100%;
-    max-width: 450px;
+    max-width: 300px;
     position: fixed;
-    right: -500px;
-    transition: .3s ease;
+    right: -350px;
+    transition: .4s cubic-bezier(.11,.03,.67,1.93);
+    top: -1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.5em;
+    }
+    li:nth-of-type(1){
+        margin-top: 8em;
+    }
 }
 
 .ham-items.active{
@@ -22,16 +41,24 @@
 nav{
     display: flex;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 2em;
+    padding: 1.5em;
     align-items: center;
+
+    a{
+       text-decoration: none;
+       color: white;
+       font-size: 3em; 
+    }
 }
 
-img{
-    width: 2.4em;
-    height: 2.7em;
-    background-color: rgb(44, 42, 78);
-    padding-block: 1em;
-    padding-inline: 1.3em;
+.logo{
+    width: 1.4em;
+    height: 1.7em;
+    background-color: rgb(36, 59, 38);
+    padding-block: .6em;
+    padding-inline: .9em;
+
+    border-radius: .4em;
 }
 
 nav button{
@@ -85,14 +112,10 @@ nav button{
 video{
     position: fixed;
     z-index: -1;
-    top: 0;
-    right: 0;
-    @media(min-width:1100px){
-        width: 100vw;
-    }
-    @media(max-width:1100px){
-        height: 100vh;
-    }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 130%;
 }  
 
 main{
@@ -107,6 +130,17 @@ main{
 h1{
     color: white;
 }
+
+.over-mij{
+    background-color: black;
+    width: 100vw;
+    margin-top: 60vh;
+    z-index: 999;
+    img{
+        justify-self: center;
+    }
+}
+
 
 article{
     width: 80vw;
