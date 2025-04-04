@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+h1{
+    font-family: sans-serif;
+    max-width: 200px;
+    text-align: center;
+    background-image: linear-gradient( to right, rgb(132, 112, 248), rgb(3, 3, 54));
+    color: transparent;
+    background-clip: text;
+}
+
+button{
+    background-color: rgb(143, 89, 253);
+    border-radius: 50%;
+    height: 10em;
+    width: 10em;
+    border: none;
+
+    &.active{
+        background-color: red;
+    }
+}
+
+audio{
+    display: none;
+}
+
