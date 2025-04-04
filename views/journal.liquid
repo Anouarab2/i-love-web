@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Love Web</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu&display=swap" rel="stylesheet">
-    <script src="scripts/script.js" defer></script> 
-</head>
-<body>
+{% render 'partials/head.liquid' %}
+
     <header>
         <ul class="ham-items">
             <li><a href="journal.html">Learning Log1</a></li>
@@ -432,5 +421,4 @@
 
     </footer>
     
-</body>
-</html>
+{% render 'partials/foot.liquid' %}
