@@ -20,6 +20,80 @@
     <video autoplay muted loop src="assets/plantRain.mov"></video>
 
     <main>
+
+        <section>
+            <h2>mijn aritkelen</h2>
+            {% for file in files%}
+                <a href="/journal/{{ file| slice:0,-3 }}">{{ file | slice:0,-3}}</a>
+            {% endfor %}
+        </section>
+
+        <article>
+            <h3>Daily checkout 31 mrt 2025</h3>
+            <ul>
+                <li>Geleerd over loading state en success state</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Daily checkout 24 mrt 2025</h3>
+            <ul>
+                <li>Gestart met de deeltaak progressive enhancement</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Daily checkout 17 mrt 2025</h3>
+            <ul>
+                <li>Geleerd over progressive enhancement</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Daily checkout 10 mrt 2025</h3>
+            <ul>
+                <li>URL’s behandeld</li>
+                <li>404-pagina uitgezocht</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Daily checkout 3 mrt 2025</h3>
+            <ul>
+                <li>Briefing gehad met de opdrachtgever</li>
+                <li>Debriefing opgesteld</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Daily checkout 24 feb 2025</h3>
+            <ul>
+                <li>Vandaag geleerd over POST</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Daily checkout 10 feb 2025</h3>
+            <ul>
+                <li>Nieuwe groepjes, team canvas ingevuld</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Daily checkout 5 feb 2025</h3>
+            <ul>
+                <li>Vandaag geoefend met het aanmaken van een route</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Daily checkout 3 feb 2025</h3>
+            <ul>
+                <li>Vandaag voor het eerst aan de slag met JSON-data</li>
+                <li>Zelf een aantal dingen in de database geplaatst</li>
+            </ul>
+        </article>
+
         <article>
             <ol>
                 <li>Ik kan uitleggen wat NodeJS is en waarvoor het gebruikt wordt. 3pnt</li>
