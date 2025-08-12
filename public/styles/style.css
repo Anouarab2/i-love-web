@@ -140,29 +140,10 @@ h1{
     color: white;
 }
 
-.foto-en-naam{
-    color: white;
-    display: flex;
-    gap: 1em;
-    max-width: 80%;
-    /* width: 80%; */
-    /* padding: 1em; */
-    align-items: center;
-
-    h2{
-        max-width: 1em;
-    }
-
-    img{
-        /* aspect-ratio: 4/2;
-        max-width: 230px;
-        max-height: 150px; */
-        width: 100%;
-    }
-}
-
 h2{
     color: white;
+    max-width: 10em;
+    text-align: center;
 }
 
 .over-mij{
