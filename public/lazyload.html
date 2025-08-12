@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load</title>
+</head>
+<body>
+    <style>
+        .images{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+    </style>
+<div class="images">
+    <p style="height: 1000px;"></p>
+    <img src="https://picsum.photos/id/237/200/300" alt="random image">
+    <p style="height: 1000px;"></p>
+    <img src="https://picsum.photos/200/300" alt="random image" loading="lazy">
+</div>
+
+</body>
+</html>
