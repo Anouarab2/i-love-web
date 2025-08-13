@@ -2,7 +2,6 @@ body{
     margin: 0;
     font-family: 'ubuntu', sans-serif;
     /* background: url(../assets/rain4k.mp4); */
-
 }
  
 header{
@@ -24,11 +23,13 @@ header{
     display: flex;
     flex-direction: column;
     gap: 1em;
+
     a{
         text-decoration: none;
         color: white;
         font-size: 1.5em;
     }
+
     li:nth-of-type(1){
         margin-top: 8em;
     }
@@ -57,7 +58,6 @@ nav{
     background-color: rgb(36, 59, 38);
     padding-block: .6em;
     padding-inline: .9em;
-
     border-radius: .4em;
 }
 
@@ -126,7 +126,6 @@ main{
     gap: 2em;
     align-items: center;
     /* justify-content: center; */
-
 }
 
 .main-content{
@@ -151,6 +150,7 @@ h2{
     width: 100vw;
     margin-top: 60vh;
     z-index: 999;
+
     img{
         justify-self: center;
     }
@@ -162,7 +162,6 @@ article{
     background-color: rgba(211, 211, 211, 0.8);
     padding: 2em;
     border-radius: 1em;
-
 }
 
 article:nth-child(odd){
