@@ -129,6 +129,7 @@ main{
 }
 
 .main-content{
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,8 +146,10 @@ h2{
     text-align: center;
 }
 
-.over-mij{
+.about-me{
     background-color: black;
+    color: white;
+    margin-bottom: -2em;
     width: 100vw;
     margin-top: 60vh;
     z-index: 999;
@@ -156,6 +159,35 @@ h2{
     }
 }
 
+.about-me-start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.study-section{
+    margin-left: 1em;
+    
+    a{
+        color: white;
+    }
+
+    img{
+        width: 90%;
+        max-width: 40em;
+    }
+
+    @media(min-width: 800px){
+        display: flex;
+        justify-content: space-evenly;
+
+        img{
+            grid-row: 1/3 ;
+            max-width: 50%;
+        } 
+    }
+
+}
 
 article{
     width: 80vw;
