@@ -186,7 +186,38 @@ h2{
             max-width: 50%;
         } 
     }
+}
 
+.drawings, .haircuts{
+    margin-left: 1em;
+    margin-top: 5em;
+    div{
+        display: flex;
+        overflow: scroll;
+        gap: 3em;
+
+        @media(min-width: 1200px){
+            justify-content: center;
+        }
+    }
+
+    img{
+        height: 10em;
+        border-radius: .3em;
+    }
+
+    @media(min-width: 800px){
+        text-align: center;
+    }
+}
+
+.haircuts{
+    padding-bottom: 5em;
+    div{
+        @media(min-width: 960px){
+            justify-content: center;
+        }
+    }
 }
 
 article{
