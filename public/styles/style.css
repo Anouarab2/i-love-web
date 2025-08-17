@@ -74,6 +74,9 @@ nav button{
     height: 3em;
     margin-left: auto;
     position: relative;
+    &:focus{
+        background-color: green;
+    }
 }
 
 .ham-menu span{
