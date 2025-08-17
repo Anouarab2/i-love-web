@@ -34,6 +34,14 @@ app.get('/journal/:slug', async function(req, res) {
     res.render('artikel.liquid',{fileContents: opgemaakteContent} )
 })
 
+app.get('/classmates', async function (req, res) {
+    const personResponse = await fetch('https://fdnd.directus.app/items/person/?sort=team&fields=*,squads.squad_id.name,squads.squad_id.cohort&filter={"_and":[{"squads":{"squad_id":{"tribe":{"name":"FDND Jaar 1"}}}},{"squads":{"squad_id":{"cohort":"2425"}}}]}')
+    const personResponseJSON = await personResponse.json()
+  
+    res.render('classmates.liquid', {persons: personResponseJSON.data})
+  })
+  
+
 
 app.use(express.urlencoded({extended: true}))
 
