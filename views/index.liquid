@@ -9,7 +9,7 @@
 
         <nav>
             <a href="/">Anouar</a>
-            <button class="ham-menu">
+            <button aria-label="Menu" class="ham-menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -17,7 +17,10 @@
         </nav>
     </header>
 
-    <video autoplay muted loop src="assets/plantRain.mp4"></video>
+    <video autoplay muted loop>
+        <source src="assets/plantRain.mp4" type="video/mp4">
+        <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+    </video>
 
     <main>
         <section class="main-content">
